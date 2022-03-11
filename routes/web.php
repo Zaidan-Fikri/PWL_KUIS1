@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexPage;
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PortofolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +21,9 @@ use App\Http\Controllers\IndexPage;
 route::prefix('index')->group(function(){
     route::get('/', [IndexPage::class, 'index']);
 });
+
+route::get('/about', [AboutUsController::class, 'about']);
+
+route::get('/contact', [ContactController::class, 'contact']);
+
+route::get('/portofolio', [PortofolioController::class, 'portofolio']);
