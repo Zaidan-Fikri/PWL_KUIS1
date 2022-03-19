@@ -16,7 +16,7 @@ use App\Http\Controllers\PortofolioController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// hal
 // Halaman Products
 route::prefix('index')->group(function(){
     route::get('/', [IndexPage::class, 'index']);
