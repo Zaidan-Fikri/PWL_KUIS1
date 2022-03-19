@@ -21,12 +21,15 @@
 						<td>{{$a ->id}}</td>
 						<td><img src="{{$a ->gambar}}" style= "width: 100px; height: 100px"></td>
 						<td>{{$a ->nama_barang}}</td>
-                        <td>{{$a ->jumlah_barang}}</td>
+                        <td>{{$a ->jumlah_barang}}</ td>
                         <td>{{$a ->harga}}</td>
 					</tr>
 					@endforeach
 				</tbody>
 			</table>
+		</div>
+		<div class="d-flex">
+			{{ $barang->links() }}
 		</div>
 	</div>	
 </section>		

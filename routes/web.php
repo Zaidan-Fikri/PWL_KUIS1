@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexPage;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\PegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +26,4 @@ route::get('/barang', [BarangController::class, 'barang']);
 
 route::get('/contact', [ContactController::class, 'contact']);
 
-route::get('/portofolio', [PortofolioController::class, 'portofolio']);
+route::get('/pegawai', [PegawaiController::class, 'pegawai']);
