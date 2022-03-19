@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexPage;
-use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PortofolioController;
 
@@ -22,7 +22,7 @@ route::prefix('index')->group(function(){
     route::get('/', [IndexPage::class, 'index']);
 });
 
-route::get('/about', [AboutUsController::class, 'about']);
+route::get('/barang', [BarangController::class, 'barang']);
 
 route::get('/contact', [ContactController::class, 'contact']);
 

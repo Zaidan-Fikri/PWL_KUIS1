@@ -13,7 +13,7 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{{url('/index')}}" class="active">HOME</a></li>
-				<li><a href="{{url('/about')}}">BARANG</a></li>
+				<li><a href="{{url('/barang')}}">BARANG</a></li>
 				<li><a href="{{url('/portofolio')}}">PELANGGAN</a></li>
 				<li><a href="{{url('/contact')}}">PEGAWAI</a></li>
 				<li><a href="{{url('/supplier')}}">SUPPLIER</a></li>
