@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexPage;
 use App\Http\Controllers\BarangController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\PegawaiController;
 
 /*
@@ -24,6 +25,8 @@ route::prefix('index')->group(function(){
 
 route::get('/barang', [BarangController::class, 'barang']);
 
-route::get('/contact', [ContactController::class, 'contact']);
+route::get('/pelanggan', [PelangganController::class, 'pelanggan']);
 
 route::get('/pegawai', [PegawaiController::class, 'pegawai']);
+
+route::get('/supplier', [SupplierController::class, 'supplier']);

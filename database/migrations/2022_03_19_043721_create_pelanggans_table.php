@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePelanggansTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,9 @@ class CreatePelanggansTable extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
+            $table->string ('nama',101);
+            $table->string ('jenis_kelamin',103);
+            $table->string ('no_hp',102);
             $table->timestamps();
         });
     }
@@ -28,4 +31,4 @@ class CreatePelanggansTable extends Migration
     {
         Schema::dropIfExists('pelanggans');
     }
-}
+};

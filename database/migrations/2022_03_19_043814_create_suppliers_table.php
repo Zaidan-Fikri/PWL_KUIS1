@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuppliersTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,9 @@ class CreateSuppliersTable extends Migration
     {
         Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
+            $table->string ('pemimpin',100);
+            $table->string ('nama_perusahaan',100);
+            $table->string ('no_perusahaan',100);
             $table->timestamps();
         });
     }
@@ -24,8 +27,10 @@ class CreateSuppliersTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(
+
+    )
     {
         Schema::dropIfExists('suppliers');
     }
-}
+};

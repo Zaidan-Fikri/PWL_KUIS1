@@ -14,7 +14,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{{url('/index')}}" class="active">HOME</a></li>
 				<li><a href="{{url('/barang')}}">BARANG</a></li>
-				<li><a href="{{url('/portofolio')}}">PELANGGAN</a></li>
+				<li><a href="{{url('/pelanggan')}}">PELANGGAN</a></li>
 				<li><a href="{{url('/pegawai')}}">PEGAWAI</a></li>
 				<li><a href="{{url('/supplier')}}">SUPPLIER</a></li>
 			</ul>
