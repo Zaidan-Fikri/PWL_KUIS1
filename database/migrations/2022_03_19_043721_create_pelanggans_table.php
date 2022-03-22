@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
-            $table->string ('nama',101);
-            $table->string ('jenis_kelamin',103);
-            $table->string ('no_hp',102);
+            $table->string ('nama',100);
+            $table->string ('jenis_kelamin',100);
+            $table->string ('no_hp',100); 
             $table->timestamps();
         });
     }
